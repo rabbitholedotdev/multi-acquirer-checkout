@@ -15,11 +15,18 @@ final readonly class ValidationResult
         public array $metadata = [],
     ) {}
 
+    /**
+     * @param  array<string, mixed>  $metadata
+     */
     public static function success(array $metadata = []): self
     {
         return new self(true, [], $metadata);
     }
 
+    /**
+     * @param  array<string, string|array<string>>  $errors
+     * @param  array<string, mixed>  $metadata
+     */
     public static function failure(array $errors, array $metadata = []): self
     {
         return new self(false, $errors, $metadata);
@@ -36,7 +43,8 @@ final readonly class ValidationResult
             return null;
         }
 
-        $firstError = reset($this->errors);
+        $errors = $this->errors;
+        $firstError = reset($errors);
 
         if (is_array($firstError)) {
             return reset($firstError) ?: null;

@@ -1,6 +1,6 @@
 # kaninstein/multi-acquirer-checkout
 
-[![CI](https://github.com/kaninstein/multi-acquirer-checkout/actions/workflows/ci.yml/badge.svg)](https://github.com/kaninstein/multi-acquirer-checkout/actions/workflows/ci.yml)
+[![CI](https://github.com/rabbitholedotdev/multi-acquirer-checkout/actions/workflows/ci.yml/badge.svg)](https://github.com/rabbitholedotdev/multi-acquirer-checkout/actions/workflows/ci.yml)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kaninstein/multi-acquirer-checkout.svg)](https://packagist.org/packages/kaninstein/multi-acquirer-checkout)
 [![Total Downloads](https://img.shields.io/packagist/dt/kaninstein/multi-acquirer-checkout.svg)](https://packagist.org/packages/kaninstein/multi-acquirer-checkout)
 [![PHP Version](https://img.shields.io/packagist/php-v/kaninstein/multi-acquirer-checkout.svg)](https://packagist.org/packages/kaninstein/multi-acquirer-checkout)

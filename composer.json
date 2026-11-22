@@ -1,6 +1,6 @@
 {
     "name": "kaninstein/multi-acquirer-checkout",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Multi-acquirer checkout package with DDD architecture for Laravel",
     "keywords": [
         "laravel",
@@ -17,8 +17,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com"
+            "name": "João Pedro Coelho",
+            "email": "contato@joaopedrocoelho.dev"
         }
     ],
     "require": {
@@ -67,5 +67,6 @@
         "sort-packages": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "homepage": "https://github.com/rabbitholedotdev/multi-acquirer-checkout"
 }

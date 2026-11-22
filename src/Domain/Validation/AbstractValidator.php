@@ -18,6 +18,8 @@ abstract class AbstractValidator implements ValidatorInterface
 
     /**
      * Helper to create success result
+     *
+     * @param  array<string, mixed>  $metadata
      */
     protected function success(array $metadata = []): ValidationResult
     {
@@ -26,6 +28,9 @@ abstract class AbstractValidator implements ValidatorInterface
 
     /**
      * Helper to create failure result
+     *
+     * @param  array<string, string|array<string>>  $errors
+     * @param  array<string, mixed>  $metadata
      */
     protected function failure(array $errors, array $metadata = []): ValidationResult
     {

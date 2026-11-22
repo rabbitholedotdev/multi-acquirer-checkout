@@ -22,11 +22,11 @@ class CardDataValidator extends AbstractValidator
         }
 
         // Validate expiration
-        if ($data->exp_month < 1 || $data->exp_month > 12) {
+        if ($data->expMonth < 1 || $data->expMonth > 12) {
             $errors['card.exp_month'] = 'Invalid expiration month';
         }
 
-        if ($data->exp_year < date('Y')) {
+        if ($data->expYear < date('Y')) {
             $errors['card.exp_year'] = 'Card is expired';
         }
 
@@ -59,10 +59,10 @@ class CardDataValidator extends AbstractValidator
         }
 
         // Remove spaces and dashes
-        $number = preg_replace('/[\s\-]/', '', $number);
+        $number = preg_replace('/[\s\-]/', '', $number) ?? '';
 
         // Must be digits only
-        if (!preg_match('/^\d+$/', $number)) {
+        if ($number === '' || !preg_match('/^\d+$/', $number)) {
             return false;
         }
 
